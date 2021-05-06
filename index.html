@@ -1,0 +1,283 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles/style.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Estilo D&G</title>
+
+        <style>
+			input{
+				font-family: times new roman;
+				font-size: 15px;
+				text-transform: uppercase;
+				text-align:right;
+				border: none;
+			}
+			
+			table{
+                border-collapse: collapse;  
+				margin: 5% 1%;
+				width: 97%;
+
+            }
+		</style>
+		<script></script>
+    </head>
+
+    <body>
+        <center>
+            <img src="styles\img\Estillo-D&G-logo.gif" height="50" width ="70" id="up">
+            <h1>Estilo D & G</h1>
+        </center>
+
+        <form>
+            <div class="container">
+                <div class="detailsUser">
+                    <div class="billFrom">
+						<h3>Estilo D&G </h3><br>
+						<h5 style="text-decoration:underline;">ADDRESS</h5>
+						Sunnyvale P01,<br>
+						Northern California<br>
+						Tele No:
+						+1-888-843-2300<br>
+                    </div>
+
+                    <div class="entryArea">
+                        <div>
+                            <label >First Name </label>
+                            <input type="text" size="20" id="fName" class=""/><br>
+                            
+                            <label>Last Name </label>
+                            <input type="text" size="20" id="lName"/><br>
+
+                            <label>Company </label>
+                            <input type="text" size="20" id="companyName"/><br>                        
+                            
+                            <label>Address </label>
+                            <input type="text" size="20" id="addr"/><br>
+                            
+                            <label>Telephone  </label>
+                            <input type="text" size="20" id="tele"/><br>
+                            
+                            <label>Email  </label>
+                            <input type="text" size="20" id="tele"/><br>
+                        </div>
+                        <div style="font-weight: bold;">
+                            INVOICE No: <br> <input type="text" size="20" id="invNo" disabled/><br>
+							
+                            DATE<br><input type="date" size="25"><br> 
+							
+							<img src="styles/img/online-shopping.JPG" height="80" width="80">
+                        </div>
+                    </div>
+                </div>
+				
+				<div class="scrollSelectors" style="text-align:center;">
+					<button><a href="#box1"> Paintings</a></button>
+					<button><a href="#box2"> Books</a></button>
+					<button><a href="#box3"> OVO-Unruly Wear</a></button>
+					<button><a href="#box4"> Nike Wear</a></button>
+				</div>
+				
+                <div class="artBox">
+					<table id="box1">	
+						<thead>
+							<tr class="nav">
+								<th></th>
+								<th>Product Name</th>
+								<th>Description</th>
+								<th>Cost</th>
+								<th>Cart</th>
+								<th>Total/Amount</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><img src="styles\img\paintings\dazzlingSubmerged.JPG" height="130" width="110" alt="Oil Painting the Dazzling Submerged"/></td>
+								<td>The Dazzling Submerged</td>
+								<td><p>Isabel Emrich, a Californian artist, catures and explored<br>the most tranquil, calm and peaceful moments underwater.<br>-May 2, 2006</p></td>
+								<td>$400,000</td>
+								<td>
+									<button id="pAddDazzleSub" onclick=""><img src="styles\img\add-to-cart.JPG" height="30" width="30"></button>
+									<button id="pRemoveDazzleSub" onclick=""><img src="styles\img\remove-from-cart.PNG" height="30" width="30"></button>
+								</td>
+								<td><input type="number" size="5" id="tot1" readonly/></td>
+							</tr>
+							<tr>
+								<td><img src="styles\img\paintings\faceLess.JPG" height="130" width="110" alt="FaceLess painting"></td>
+								<td>FaceLess</td>
+								<td><p>The infamous oil-painter, Gregory Woolery, dipicts the array <br>of unknown personalities in a mask of colors.<br>Where does one go from here ?<br>-September 23, 1999<p></td>
+								<td>$1.5M</td>
+								<td>
+									<button id="pAddDazzleSub" onclick=""><img src="styles\img\add-to-cart.JPG" height="30" width="30"></button>
+									<button id="pRemoveDazzleSub" onclick=""><img src="styles\img\remove-from-cart.PNG" height="30" width="30"></button>
+								</td>							
+								<td><input type="number" size="5" id="tot1" readonly/></td>
+							</tr>
+							<tr>
+								<td><img src="styles\img\paintings\love-palette-knife.JPG" height="130" width="110" ></td>
+								<td>Love Palette Knife</td>
+								<td><p>Love takes us places, places where movement and thought share<br>the same space.<br>Leonid Afremov<br>- Januray 8, 1987</td>
+								<td>$650,000</td>
+								<td>
+									<button id="pAddDazzleSub" onclick=""><img src="styles\img\add-to-cart.JPG" height="30" width="30"></button>
+									<button id="pRemoveDazzleSub" onclick=""><img src="styles\img\remove-from-cart.PNG" height="30" width="30"></button>
+								</td>
+								<td><input type="number" size="5" id="tot1" readonly/></td>
+							</tr>
+							<tr>
+								<td><img src="styles\img\paintings\Lanscape-En-Plein-Air.JPG" height="90" width="110"></td>
+								<td>Lanscape En Plein Air</td>
+								<td>Micheal Chesley remisinces her chilhood in a warm and vibrant feeling<br> - September 9, 2000</td>
+								<td>$350,000</td>
+								<td>
+									<button id="pAddDazzleSub" onclick=""><img src="styles\img\add-to-cart.JPG" height="30" width="30"></button>
+									<button id="pRemoveDazzleSub" onclick=""><img src="styles\img\remove-from-cart.PNG" height="30" width="30"></button>
+								</td>
+								<td><input type="number" size="5" id="tot1" readonly/></td>
+							</tr>
+							<tr>
+								<td><img src="styles\img\paintings\Spring-Outing.JPG" height="100" width="110"></td>
+								<td>Spring Outing</td>
+								<td><p>Surely Miss Dana-Lee Powell sees the spring time with audacious colors<br>and the light mood. This outing should be a good one.<br>-June 10, 1890<p></td>
+								<td>$700,000</td>
+								<td>
+									<button id="pAddDazzleSub" onclick=""><img src="styles\img\add-to-cart.JPG" height="30" width="30"></button>
+									<button id="pRemoveDazzleSub" onclick=""><img src="styles\img\remove-from-cart.PNG" height="30" width="30"></button>
+								</td>
+								<td><input type="number" size="5" id="tot1" readonly/></td>
+							</tr>
+							<tr>
+								<td><img src="styles\img\paintings\Panorama.JPG" height="100" width="110"></td>
+								<td>Panorama</td>
+								<td>Where friendship take you or the colors of unknown ?<br>Penny Wise<br>-August 9, 1997</td>
+								<td>$1,000,000</td>
+								<td>
+									<button id="pAddDazzleSub" onclick=""><img src="styles\img\add-to-cart.JPG" height="30" width="30"></button>
+									<button id="pRemoveDazzleSub" onclick=""><img src="styles\img\remove-from-cart.PNG" height="30" width="30"></button>
+								</td>
+								<td><input type="number" size="5" id="price" readonly/></td>
+							</tr>						
+						</tbody>
+
+					</table>
+                </div>
+				
+                <div class="bookBox">
+					<table id="box2">
+						<thead>
+							<tr class="nav">
+								<th></th>
+								<th>Product Name</th>
+								<th>Description</th>
+								<th>Cost</th>
+								<th>Quantity</th>
+								<th>Total/Amount</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><img src="styles\img\books\Sea-of-Strangers.JPG" ></td>
+								<td>Sea of Strangers</td>
+								<td>This original collection of poetry and prose beautifully writtten by <br> Lang Leav & Gregory Woolery which not only delight the avid fans <br> but is sure to capture the imagination of the audience.</td>
+								<td>$99.99</td>
+								<td><input type="number" size="5" name="quant" max="50" min="0" value="0"></td>
+								<td><input type="number" size="10" name="price" readonly/></td>							</tr>
+							<tr>
+								<td><img src="styles\img\books\black-book-of-poems.JPG"/></td>
+								<td>Black Book of Poems</td>
+								<td> #1 Best seller for over 2 years, Black Book of Poems is a collection <br> of poems in which Woolery touches on the subjects of love, loss,<br> abandonment, religion, depresssion and pain.</td>
+								<td>$105.00</td>
+								<td><input type="number" size="5" name="quant" max="50" min="0" value="0"></td>
+								<td><input type="number" size="10" name="price" readonly/></td>
+							</tr>
+							<tr>
+								<td><img src="styles\img\books\codePoetry.PNG"></td>
+								<td>Code Poetry</td>
+								<td>Code Poetry is literature that mixes notions of classical poetry and computer code.<br> Unlike digital poetry, which prominently uses physical computers,<br> code poems may or may not run through executable binaries.<br> A code poem may be interactive or static, digital or analog.<br> Code poems can be performed by computers or humans <br> through spoken word and written text.</td>
+								<td>$89.99</td>
+								<td><input type="number" size="5" name="quant" max="50" min="0" value="0"></td>
+								<td><input type="number" size="10" name="price" readonly/></td>
+							</tr>
+							<tr>
+								<td><img src="styles\img\books\to-drink-coffee-with-a-ghost.JPG"></td>
+								<td>To Drink Coffee with a Ghost</td>
+								<td>From the best selling & award winning poet, Gregory Woolery,<br>comes with the book <em> To Drink Coffee with a Ghost </em><br> where he reminisces the memory of the <br>complicated life he had while growing up.</td>
+								<td>$149.99</td>
+								<td><input type="number" size="5" name="quant" max="50" min="0" value="0"></td>
+								<td><input type="number" size="10" name="price" readonly/></td>
+							</tr>					
+						</tbody>
+					</table>
+                </div>
+
+				<div class="Nikebox">
+					<div>
+						<img src="styles\img\nikeWear\raining-Pullover.JPG"><br>
+						Raining Pullover<br>
+						Quantity:
+						<input type="number" size="5" name="quant" max="50" min="0" value="0"><br>
+						<input type="number" size="10" name="price" readonly/>
+					</div>
+					<div>
+						<img src="styles\img\nikeWear\dry-Pullover.JPG"><br>
+						Dry Pullover<br>
+						Quantity:
+						<input type="number" size="5" name="quant" max="50" min="0" value="0"><br>
+						<input type="number" size="10" name="price" readonly/>
+					</div>
+					<div>
+						<img src="styles\img\nikeWear\space-pullOver.JPG"><br>
+						Space pullOver<br>
+						Quantity:
+						<input type="number" size="5" name="quant" max="50" min="0" value="0"><br>
+						<input type="number" size="10" name="price" readonly/>
+					</div>
+					<div>
+						<img src="styles\img\nikeWear\womens-white-hoodies.JPG"><br>
+						Womens White Hoodies<br>
+						Quantity:
+						<input type="number" size="5" name="quant" max="50" min="0" value="0"><br>
+						<input type="number" size="10" name="price" readonly/>
+					</div>
+					<div class="">
+						<img src="styles\img\nikeWear\white-h1.JPG"><br>
+						White Nike Cap<br>
+						Quantity:
+						<input type="number" size="5" name="quant" max="50" min="0" value="0"><br>						
+						<input type="number" size="10" name="price" readonly/>
+					</div>
+					<div class="">
+						<img src="styles\img\nikeWear\blueNikeCap.JPG"><br>
+						Blue Nike Cap<br>
+						Quantity:
+						<input type="number" size="5" name="quant" max="50" min="0" value="0"><br>
+						<input type="number" size="10" name="price" readonly/>
+					</div>
+					<div class="">
+						<img src="styles\img\nikeWear\orangeNikeHat.JPG"><br>
+						Orange Nike Cap<br>
+						Quantity:
+						<input type="number" size="5" name="quant" max="50" min="0" value="0"><br>
+						<input type="number" size="10" name="price" readonly/>
+					</div>
+					<div class="">
+						<img src="styles\img\nikeWear\redNikeHat.JPG"><br>
+						Red Nike Cap<br>
+						Quantity:
+						<input type="number" size="5" name="quant" max="50" min="0" value="0"><br>
+						<input type="number" size="10" name="price" readonly/>
+					</div>
+				</div>
+				<div>
+					
+				</div>
+				<div>
+					<a href="#up"><img src="styles\img\upArrow.PNG" height="50" width="50" id="upArrow"></a>
+				</div>
+				
+            </div>
+        </form>
+    </body>
+
+    
+</html>
